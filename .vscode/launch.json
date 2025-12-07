@@ -4,6 +4,13 @@
     // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+                {
+            "name": "現有的檔案",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
         {
             "name": "lesson5 debug",
             "type": "debugpy",
@@ -34,6 +41,19 @@
             "program": "${workspaceFolder}/lesson5/lesson5_2.1.py",
             "console": "integratedTerminal"
         },
-        
+         {
+            "name": "lesson6_5 debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/lesson6/lesson6_5.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "lesson6_6 debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/lesson6/lesson6_6.py",
+            "console": "integratedTerminal"
+        },
                   ]
 }
