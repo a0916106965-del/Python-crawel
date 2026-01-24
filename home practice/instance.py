@@ -1,3 +1,4 @@
+#實體物件的建立與使用_上篇
 #Point 實體物件的設計:平面座標上的點
 class Point:
     def __init__(self,x,y):
