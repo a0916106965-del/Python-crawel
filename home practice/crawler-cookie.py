@@ -1,4 +1,4 @@
-#抓取PTT電影版的網頁原始碼(HTML)
+#抓取PTT八卦版的網頁原始碼(HTML)
 import urllib.request as req
 url="https://www.ptt.cc/bbs/Gossiping/index.html"
 #建立一個Request物件，附加Request Headers的資訊
@@ -13,7 +13,7 @@ with req.urlopen(request) as response:
 print(data)
 
 #解析原始碼，取得每篇文章的標題
-#利用BeautifulSoup協助我們解析HTML格心一文件
+#利用BeautifulSoup協助我們解析HTML格式文件
 import bs4
 root=bs4.BeautifulSoup(data,"html.parser")
 #尋找所有class="title"的div標籤
