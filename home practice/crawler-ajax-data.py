@@ -22,7 +22,6 @@ with req.urlopen(request) as response:
 result=json.loads(result)
 #   print(result["0"]["data"]["webRecommendedFeed"]["items"][0]["post"]["title"])
 #試著印出第一篇文章的標題
-items=result["data"]["webRecommendedFeed"]["items"]
+items=result["data"]["webRecommendedFeed"]
 for item in items:
    print(item["post"]["title"])
-
